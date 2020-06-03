@@ -15,11 +15,7 @@ class NotificationsManager {
 	
 	static var shared = NotificationsManager()
 	private init() {}
-	
-	/**
-	There are 2 parts of this manager, one is for the system notifications settings.
-	The other one is for fetching notifications from core data and they should remain separate in this class
-	*/
+
 	
 	// MARK: - Notfication Settings
 	
@@ -65,12 +61,7 @@ class NotificationsManager {
 			}
 		}
 	}
-	
-	func removeAllNotifications() {
-		center.removeAllDeliveredNotifications()
-		center.removeAllPendingNotificationRequests()
-	}
-	
+
 	private func openSettingsScreen() {
 		if let bundleIdentifier = Bundle.main.bundleIdentifier,
 			let appSettings = URL(string: UIApplication.openSettingsURLString + bundleIdentifier) {
