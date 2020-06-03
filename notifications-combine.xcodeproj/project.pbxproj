@@ -13,17 +13,21 @@
 		51F3D7AA2487C3E800558843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F3D7A92487C3E800558843 /* Assets.xcassets */; };
 		51F3D7AD2487C3E800558843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F3D7AC2487C3E800558843 /* Preview Assets.xcassets */; };
 		51F3D7B02487C3E800558843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F3D7AE2487C3E800558843 /* LaunchScreen.storyboard */; };
+		51F3D7B82487C4DE00558843 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F3D7B72487C4DE00558843 /* ContentViewModel.swift */; };
+		51F3D7BA2487C53F00558843 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F3D7B92487C53F00558843 /* NotificationsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		51F3D7A02487C3E400558843 /* notifications-combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notifications-combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F3D7A32487C3E400558843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51F3D7A52487C3E400558843 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		51F3D7A72487C3E400558843 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		51F3D7A72487C3E400558843 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		51F3D7A92487C3E800558843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51F3D7AC2487C3E800558843 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		51F3D7AF2487C3E800558843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51F3D7B12487C3E800558843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51F3D7B72487C4DE00558843 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		51F3D7B92487C53F00558843 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				51F3D7AE2487C3E800558843 /* LaunchScreen.storyboard */,
 				51F3D7B12487C3E800558843 /* Info.plist */,
 				51F3D7AB2487C3E800558843 /* Preview Content */,
+				51F3D7B72487C4DE00558843 /* ContentViewModel.swift */,
+				51F3D7B92487C53F00558843 /* NotificationsManager.swift */,
 			);
 			path = "notifications-combine";
 			sourceTree = "<group>";
@@ -146,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F3D7B82487C4DE00558843 /* ContentViewModel.swift in Sources */,
 				51F3D7A42487C3E400558843 /* AppDelegate.swift in Sources */,
 				51F3D7A62487C3E400558843 /* SceneDelegate.swift in Sources */,
+				51F3D7BA2487C53F00558843 /* NotificationsManager.swift in Sources */,
 				51F3D7A82487C3E400558843 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,13 +9,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
+	
+	@ObservedObject var model = ContentViewModel()
+	
+	var body: some View {
+		VStack(alignment: .leading, spacing: 16) {
+			Text("Notifications").font(.title).bold()
+			Text("We recommend turning notifications on")
+			VStack(alignment: .leading) {
+				HStack {
+					Toggle(isOn: $model.isNotificationsAuthorized) {
+						Text("Notification status")
+					}
+				}
+			}
+			
+		}.background(model.isNotificationsAuthorized ? Color.green : Color.gray)
+		.foregroundColor(model.isNotificationsAuthorized ? Color.white : Color.black).padding()
+	}
+	
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
 }
